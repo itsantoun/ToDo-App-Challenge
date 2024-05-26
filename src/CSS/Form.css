@@ -1,0 +1,106 @@
+/* Desktop mode */
+.todo-wrapper {
+    background-color: #4C5B6C;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.todo-wrapper:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.todo-input {
+    margin-bottom: 20px;
+}
+
+.todo-inputs {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.todo-inputs label {
+    font-weight: bold;
+    color: #918981;
+    margin-right: 10px;
+}
+
+.todo-inputs input {
+    padding: 10px;
+    border: none;
+    width: 100%;
+    background-color: #9FA4A3;
+    color: #ecf0f1;
+    border-radius: 5px;
+}
+
+.todo-inputs input:focus {
+    outline: none;
+    border: 2px solid #3A3A3A;
+}
+
+.todo-inputs input::placeholder {
+    color: #333;
+}
+
+.due-date {
+    margin-right: 10px;
+    color: #ecf0f1;
+}
+
+.calendar-icon {
+    font-size: 24px;
+    color: #918981;
+    cursor: pointer;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.calendar-icon:hover {
+    color: #333;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.add-btn {
+    background-color: #5A636A;
+    color: #9FA4A3;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #717B7F;
+    color: white;
+}
+
+.react-calendar__tile--disabled {
+    color: #474444 !important;    
+    pointer-events: none;
+}
+
+/* Mobile mode */
+
+@media (max-width: 768px) {
+    .todo-wrapper {
+        padding: 10px;
+        border-radius: 10px;  
+    }
+
+    .todo-inputs input::placeholder {
+       font-size: 15px;
+    }
+}

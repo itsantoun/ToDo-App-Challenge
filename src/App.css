@@ -1,0 +1,104 @@
+body {
+  background-color: #D0CDC9;
+  color: #918981;
+  overflow: hidden;
+}
+
+.welcome {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.App {
+  height: 100vh; 
+  overflow-y: auto; 
+}
+
+/* Desktop Mode */
+.form-positioning {
+  float: left;
+  width: 50%;
+}
+
+.status-positioning {
+  float: right;
+  width: 50%;
+}
+
+.typewriter h2 {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto; 
+  letter-spacing: .01em;
+  animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 32% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/*MOBILE mode */
+
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+
+  .form-positioning,
+  .status-positioning {
+    float: none;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0 0px;
+    box-sizing: border-box;
+  }
+
+  .App {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  .logout-btn {
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .App-logo {
+    height: 30vmin; 
+  }
+
+  .App-header {
+    font-size: calc(10px + 3vmin);
+    padding: 20px; 
+    box-sizing: border-box;
+  }
+
+  .typewriter h2 {
+    font-size: 1.2em;
+  }
+
+  input, textarea {
+    font-size: 16px;
+  }
+}
