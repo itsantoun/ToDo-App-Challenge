@@ -29,7 +29,7 @@ Hello and welcome to the To-Do-App-Challenge. <br />
 <blockquote>
     1. Locate the IP of your machine <br />
     2. On your browser place the IP Address followed by :3000 (Works on any browsers) <br />
-    _for example: 192.168.21:3000_
+    for example: 192.168.21:3000
 </blockquote>
 
 Hope you enjoy it let me know if you need any help! <br />
